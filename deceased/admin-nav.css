@@ -1,0 +1,150 @@
+/*NAVBAR*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-family: serif;
+    padding-left: 6px;
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: #16F529;
+    transition: 0.5s;
+}
+.fa-bars
+{
+    color: #fff;
+    font-size: 20px !important;
+}
+.nav-item{
+    font-weight: 600;
+    padding-left: 35px;
+    font-size: 20px;
+
+}
+.user-pic
+{
+    width: 40px;
+   
+}
+.sub-menu-wrap
+{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu
+{
+    max-height: 400px;
+    
+}
+.sub-menu
+{
+    background: #030001;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.user-info
+{
+    display: flex;
+    align-items: center;
+}
+.user-info h3
+{
+    font-weight: 500;
+}
+.user-info img
+{
+    width: 60px;
+    border-radius: 15%;
+    margin-right: 15px;
+}
+.sub-menu hr
+{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.sub-menu-link
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffff;
+    margin: 12px 0;
+}
+.sub-menu-link p
+{
+    width: 100%;
+}
+.sub-menu-link img
+{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+.sub-menu-link span
+{
+    font-size: 15px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span
+{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p
+{
+    font-weight: 600;
+}
+
+
+.btn0{
+height: 52px;
+width: 110px;
+outline: none;
+border: none;
+color: rgb(3, 199, 45);
+cursor: pointer;
+transition: all 0.5s;
+background-color: transparent;
+}
+.btn0:hover{
+    background: rgb(3, 199, 45);
+    transition: all 0.5s;
+    color: white;
+}
+.btn1{
+    height: 52px;
+    width: 110px;
+    outline: none;
+    border: none;
+    color: rgb(3, 199, 45);
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: transparent;
+    }
+.btn1:hover{
+        background: rgb(3, 199, 45);
+        transition: all 0.5s;
+        color: white;
+    }
