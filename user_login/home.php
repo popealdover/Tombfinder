@@ -14,18 +14,30 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <title>Tomb Finder</title>
 
     <link rel="stylesheet" href="style.css">
     
   <link rel="stylesheet" type="text/css" href="table.css">
+  <style>
+         html,
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        </style>
   </head>
   <body>
 
   
 
-  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #444645;">
-      <div class="container-fluid">
+   <nav class="navbar navbar-expand-lg py-0 bg-dark fixed-top">
+        <div class="container-fluid">
 
         <a class="navbar-brand" href="#">
                 <img class="logo" src="img/logo1.png" alt="" width="100"> Tomb Finder
@@ -85,7 +97,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     </nav>
     <!-- ======= S E C T I O N S  ========= -->
     <!-- ======= H O M E ========= -->
-    <section id="home">
+    <section id="home" >
       <div class="container">
         <div class="row">
           <div class="col-lg-$">
@@ -96,12 +108,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
       </div>
     </section>
 <!-- ======= D E T A I L S  ========= -->
-<section id="details">
+<section id="details" style="background:url(./img/loginbg.jpg);">
   <div class="container">
     <div class="row">
       <div class="col-lg-$">
       <div class="container">
-        <div class="row">
+        <div class="row" >
             <div class="col-md-12">
                 <div class="card mt-4">
                     <div class="card-header">
@@ -187,11 +199,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    
 <!-- ======= A B O U T ========= -->
 
-<section id="about" style="background:url(./img/loginbg.jpg);
+<section id="about" data-aos="fade-up" data-aos-duration  = "700" style="
     background-position: center;
     background-size: cover;  ba ckground-attachment: fixed;
     position: relative;
@@ -202,15 +213,15 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
       <div class="col-lg-$">
         <div>
          
-        <h1 style="clear:right">ABOUT US</h1>
-        <h2>Tomb Finder: An Integrated Information Management and Tracing System for Memorial Park with Geomapping</h2>
-        <h2>Ever Memorial Garden</h2>
-        <p>Ever Memorial Garden, being the true memorial park of the new millenium, commits to the same ideals that have spelled the mission for most modern memorial parks. </p>
+        <h1 data-aos="fade-right" data-aos-duration  = "700" style="clear:right">ABOUT US</h1>
+        <h2 data-aos="fade-left" data-aos-duration  = "700">Tomb Finder: An Integrated Information Management and Tracing System for Memorial Park with Geomapping</h2>
+        <h2 data-aos="fade-right" data-aos-duration  = "700">Ever Memorial Garden</h2>
+        <p data-aos="fade-left" data-aos-duration  = "700">Ever Memorial Garden, being the true memorial park of the new millenium, commits to the same ideals that have spelled the mission for most modern memorial parks. </p>
       <!-- Add font awesome icons -->
       <br><br>
-      <a href="https://www.facebook.com/EverMemorialGardenLotSale?mibextid=ZbWKwL" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="http://evermemorialgarden.com.ph/" class="fa fa-google"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://www.google.com/search?client=firefox-b-d&q=XMM%2BJ2Q%2C+E+Service+Rd%2C+Meycauayan%2C+Metro+Manila" class="fa fa-map-marker"></a>
+      <a  href="https://www.facebook.com/EverMemorialGardenLotSale?mibextid=ZbWKwL" data-aos="fade-up" data-aos-duration  = "700" class="fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://evermemorialgarden.com.ph/"  data-aos="fade-up" data-aos-duration  = "700" class="fa fa-google"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.google.com/search?client=firefox-b-d&q=XMM%2BJ2Q%2C+E+Service+Rd%2C+Meycauayan%2C+Metro+Manila" data-aos="fade-up" data-aos-duration  = "700" class="fa fa-map-marker"></a>
       </div>
     </div>
   </div>
@@ -296,6 +307,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
   </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
   </body>
 </html>
     
